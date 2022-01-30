@@ -1,7 +1,7 @@
 # Risk Prediction of Cardiac Events Using Measurements from Stress Echocardiography Tests
 
 ## Introduction
-This project provides me with the opportunity to practise and apply the analytical skills with R using existing templates (Balshaw, 2021) to predict the risk of having cardiac events using a series of predictors, which are the measurements taken during stress echocardiography tests. The data is given to the students together with the assignment handout and is expected to be processed, interpreted, and analyzed. The data is then used to build several logistic regression models which are then validated. (Only logistic regression models are built as learnt from class). Finally, the results are presented, interpreted, and discussed. The ultimate objective of this assignment is to find the predictors that best predict the risk of cardiac events. 
+This project provides me with the opportunity to practise and apply the analytical skills with R using existing templates (Balshaw, 2021) to predict the risk of having cardiac events using a series of predictors, which are the measurements taken during stress echocardiography tests. The data provided is to be processed, interpreted, and analyzed. The data is then used to build several logistic regression models which are then validated. Finally, the results are presented, interpreted, and discussed. The ultimate objective of this project is to find the predictors that best predict the risk of cardiac events. The R codes are in the attached R notebook.
 
 ### Dataset Description
 
