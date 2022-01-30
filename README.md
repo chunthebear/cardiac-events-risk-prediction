@@ -103,7 +103,7 @@ From the null deviance and residual deviance, we could calculate the Chi-Square 
 
 ## Conclusion
 
-This assignment reflects the learnings from the classes and successfully develops, validates, and interprets a final logistic regression model to predict cardiac events using measured predictors from stress echocardiography tests using R. The most significant predictors include restwma, posSE, hxofHT, hxofMI, ecg, pkhr, and hxofDM. These results also largely overlap the findings from the original studies with some differences. As part of the recommendation, more numbers of folds could be tried for cross-validation to take the average scores from repeated validations. Other types of models could be built and validated for comparison including decision trees and artificial neural networks to potentially achieve better results. 
+This project successfully develops, validates, and interprets a final logistic regression model to predict cardiac events using measured predictors from stress echocardiography tests using R. The most significant predictors include restwma, posSE, hxofHT, hxofMI, ecg, pkhr, and hxofDM. These results also largely overlap the findings from the original studies with some differences. As part of the recommendation, more numbers of folds could be tried for cross-validation to take the average scores from repeated validations. Other types of models could be built and validated for comparison including decision trees and artificial neural networks to potentially achieve better results. 
 
 
 ## References
