@@ -15,7 +15,7 @@ The given dataset is loaded, assessed, further processed, and interpreted. Sever
 
 ![process_dia drawio](https://user-images.githubusercontent.com/16961563/151689703-582faa99-35fd-4b37-b27f-860edc75ee05.png)
 
-_Figure 1. Process diagram. _
+_Figure 1. Process diagram._
 
 ### Dataset Preparation
 
@@ -41,7 +41,7 @@ The two models built in the forward direction and in both directions starting wi
 
 ![f2](https://user-images.githubusercontent.com/16961563/151690435-6cabd234-0556-4ccc-8989-bb5cbe540ac3.png)
 
-_Figure 2. ROC and AUC for the forward and backward models. _	
+_Figure 2. ROC and AUC for the forward and backward models._	
 
 The ROC is plotted for both of them, and this time the backward model is slightly better having a slightly higher AUC of 0.799, as compared to that of 0.798 of the forward model, as seen in Figure 2. 
 	Since the AUC scores are not suspiciously high, it is unclear if there exists overfitting. To check for overfitting, we divide the dataset into training and test sub-sets with a 4:1 ratio and only use the training set to fit the models, and use the test set to evaluate the models. The forward model has an AUC of 0.81 from training and 0.77 from testing; the backward model has an AUC of 0.81 from training and 0.76 from testing, as seen in Table 1. Since the training and testing AUC are not far from each other for both the models, the extent of overfitting is not large. The forward model is slightly better having a better testing AUC and the backward model might be slightly more overfit, but the two models are very close to each other in terms of their performance, and it is unclear which model is better and further validation is needed. 
