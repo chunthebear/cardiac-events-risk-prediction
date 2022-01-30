@@ -14,6 +14,7 @@ The given dataset is loaded, assessed, further processed, and interpreted. Sever
 ### Process Diagram
 
 ![process_dia drawio](https://user-images.githubusercontent.com/16961563/151689703-582faa99-35fd-4b37-b27f-860edc75ee05.png)
+
 Figure 1. Process diagram. 
 
 ### Dataset Preparation
@@ -39,6 +40,7 @@ Logistic regression models were constructed with stepwise regression in the forw
 The two models built in the forward direction and in both directions starting with a small model are the same model, having 9 predictors restwma, posSE, hxofHT, hxofMI, ecg, pkhr, hxofDM, dobdose, and maxhr. We call this model the “forward model”, and its AIC is 424.14. The other two models built in the backward direction and in both directions starting with a big model are also the same model, having 10 predictors basebp, basedp, pkhr, pctmphr, restwma, posSE, hxofHT, hxofMI, hxofDM and ecg. We call this model the “backward model”, and its AIC is 425.48. The forward model performs slightly better judging from the slightly lower AIC value. 
 
 ![f2](https://user-images.githubusercontent.com/16961563/151690435-6cabd234-0556-4ccc-8989-bb5cbe540ac3.png)
+
 Figure 2. ROC and AUC for the forward and backward models. 	
 
 The ROC is plotted for both of them, and this time the backward model is slightly better having a slightly higher AUC of 0.799, as compared to that of 0.798 of the forward model, as seen in Figure 2. 
