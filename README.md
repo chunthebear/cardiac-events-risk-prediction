@@ -1,2 +1,1 @@
-# cardiac events risk prediction
- Risk Prediction of Cardiac Events
+# Risk Prediction of Cardiac Events Using Measurements from Stress Echocardiography Tests
