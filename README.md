@@ -15,7 +15,7 @@ The given dataset is loaded, assessed, further processed, and interpreted. Sever
 
 ![process_dia drawio](https://user-images.githubusercontent.com/16961563/151689703-582faa99-35fd-4b37-b27f-860edc75ee05.png)
 
-Figure 1. Process diagram. 
+_Figure 1. Process diagram. _
 
 ### Dataset Preparation
 
@@ -41,7 +41,7 @@ The two models built in the forward direction and in both directions starting wi
 
 ![f2](https://user-images.githubusercontent.com/16961563/151690435-6cabd234-0556-4ccc-8989-bb5cbe540ac3.png)
 
-Figure 2. ROC and AUC for the forward and backward models. 	
+_Figure 2. ROC and AUC for the forward and backward models. _	
 
 The ROC is plotted for both of them, and this time the backward model is slightly better having a slightly higher AUC of 0.799, as compared to that of 0.798 of the forward model, as seen in Figure 2. 
 	Since the AUC scores are not suspiciously high, it is unclear if there exists overfitting. To check for overfitting, we divide the dataset into training and test sub-sets with a 4:1 ratio and only use the training set to fit the models, and use the test set to evaluate the models. The forward model has an AUC of 0.81 from training and 0.77 from testing; the backward model has an AUC of 0.81 from training and 0.76 from testing, as seen in Table 1. Since the training and testing AUC are not far from each other for both the models, the extent of overfitting is not large. The forward model is slightly better having a better testing AUC and the backward model might be slightly more overfit, but the two models are very close to each other in terms of their performance, and it is unclear which model is better and further validation is needed. 
@@ -51,7 +51,7 @@ The ROC is plotted for both of them, and this time the backward model is slightl
  | Forward model | 0.81 | 0.77 |
  | Backward model | 0.81 | 0.76 |
 
-Table 1. Training and testing AUC for the forward and backward models.
+_Table 1. Training and testing AUC for the forward and backward models._
 
 ### Cross-validation
 
@@ -59,20 +59,19 @@ k-fold cross-validation is conducted to mitigate overfitting (Balshaw, 2021). Th
 
 Firstly, 5-fold cross-validation is conducted on the two models. The forward model gives a mean training AUC of 0.798, and testing AUC of 0.744; the backward model gives a mean training AUC of 0.801 and testing AUC of 0.734 (seen in Table 2). It is clear the forward model is better, having a smaller difference between the training and testing AUC, and a higher testing AUC as well, likely less overfit. Then, 10-fold cross-validation is also conducted on the two models. The forward model gives a mean training AUC of 0.796, and testing AUC of 0.743; the backward model gives a mean training AUC of 0.798 and testing AUC of 0.723 (seen in Table 3). Again, the forward model gives better scores and is likely less overfit due to the smaller difference between training and test scores, as highlighted in green in Table 2 and 3. 
 
-
  | Models | Mean Training AUC | Mean Testing AUC | Difference | 
  | - | - | - | - |
  | Forward model | 0.798 | 0.744 | 0.054 | 
  | Backward model | 0.801 | 0.734 | 0.067 | 
 
-Table 2. Mean training and testing AUC, and their difference from 5-fold cross-validation.
+_Table 2. Mean training and testing AUC, and their difference from 5-fold cross-validation._
 
  | Models | Mean Training AUC | Mean Testing AUC | Difference | 
  | - | - | - | - |
  | Forward model | 0.796 | 0.743 | 0.053 | 
  | Backward model | 0.798 | 0.723 | 0.075 | 
 
-Table 3. Mean training and testing AUC, and their difference from 10-fold cross-validation.
+_Table 3. Mean training and testing AUC, and their difference from 10-fold cross-validation._
 
 ## Final Results
 
@@ -90,7 +89,7 @@ The forward model having predictors restwma, posSE, hxofHT, hxofMI, ecg, pkhr, h
  | dobdose | 0.066424 | 
  | maxhr | 0.090682 | 
 
-Table 4. Ranked predictors and their p-values used in the final model.
+_Table 4. Ranked predictors and their p-values used in the final model._
 
 The final model also has null deviance of 489.74 on 557 degrees of freedom, and residual deviance of 402.14 on 547 degrees of freedom. 
 
